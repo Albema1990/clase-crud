@@ -30,3 +30,12 @@ export const updateTask = async (req, res) => {
   }
   res.json(updateTask);
 };
+
+export const deleteTask = async (req, res) => {
+  const { id } = req.params;
+  const deleteTask = await Task.findByIdAndDelete(id);
+  if (!deleteTask) {
+    return res.status(404).json({ message: "Task not found" });
+  }
+  res.json({ message: "Task deleted" });
+};
