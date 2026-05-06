@@ -1,0 +1,27 @@
+{
+  "name": "clase-nueva-repaso-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch --env-file=.env index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Albema1990/clase-crud.git"
+  },
+  "keywords": [],
+  "author": "Álvaro Benítez",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Albema1990/clase-crud/issues"
+  },
+  "homepage": "https://github.com/Albema1990/clase-crud#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.6.1"
+  }
+}
